@@ -1,10 +1,6 @@
 import random
  
 from bke import MLAgent, is_winner, opponent, RandomAgent, train_and_plot
- 
-# alpha verandert de snelheid waarmee het model verandert naar elke error.
-# epsilon verandert de waarde waarmee het algorimte iets willekeurigs nieuws probeert
-
 
 
 class MyAgent(MLAgent):
@@ -19,6 +15,10 @@ class MyAgent(MLAgent):
     
     
 random.seed(1)
+ 
+# alpha verandert de snelheid waarmee het model verandert naar elke error.
+# epsilon verandert de waarde waarmee het algorimte iets willekeurigs nieuws probeert
+# als je ze omdraait dan leert het algorimte dus minder snel en het probeert meer willeukeurige dingen
  
 my_agent = MyAgent(alpha = 0.8, epsilon = 0.2)
 random_agent = RandomAgent()
