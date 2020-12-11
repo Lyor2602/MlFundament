@@ -3,6 +3,7 @@ import random
 from bke import MLAgent, is_winner, opponent, RandomAgent, train_and_plot
  
 # alpha verandert de snelheid waarmee het model verandert naar elke error.
+# epsilon verandert de waarde waarmee het algorimte iets willekeurigs nieuws probeert
 
 
 
